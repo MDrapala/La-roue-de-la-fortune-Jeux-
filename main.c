@@ -57,16 +57,16 @@ int main(int argc, char *argv[])
         }
         
         //boucle avec les conditions
-        for(nombre = 0; nombre != nombreMystere; nombre == nombreMystere)
+        for(nombre = 0; nombre != nombreMystere;)
         {
             if(nombre > nombreMystere)
             {
-                printf("Saisir un nombre inférieur %d \n", nombre);
+                printf("Saisir un nombre inférieur à %d \n", nombre);
                 scanf("%d", &nombre);
             }
             else if(nombre < nombreMystere)
             {
-                printf("Saisir un nombre supérieur %d \n", nombre);
+                printf("Saisir un nombre supérieur à %d \n", nombre);
                 scanf("%d", &nombre);
             }
         }
@@ -90,3 +90,4 @@ int main(int argc, char *argv[])
     }
     while (replay == 1);
 }
+
